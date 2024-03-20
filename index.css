@@ -1,0 +1,131 @@
+/* reset*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: rgb(61, 60, 60);
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    padding: 25px 0px;
+
+}
+
+.avatar {
+    border: 1px solid;
+    border-radius: 100%;
+    width: 100px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    justify-self: center;
+}
+
+.avatar img {
+    width: 110px;
+}
+
+.intro {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    padding: 18px;
+}
+
+.intro h5{
+    color: rgb(186, 185, 185);
+}
+
+/* main */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.side-panel {
+    padding: 20px;
+    min-height: 100vh;
+    background-color: rgb(241, 232, 214);
+}
+
+section > h1 {
+    margin: 6px 0;
+}
+
+div > a {
+    color: rgb(53, 53, 53);
+}
+
+.contact-details > div {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    margin-bottom: 3px;
+}
+
+.education ul {
+    padding-inline: 11px;
+    
+}
+
+.education h6 {
+    color: rgb(53, 53, 53);
+    margin: 4px 0;
+}
+
+.skills p {
+    color: rgb(53, 53, 53);
+    margin-bottom: 6px;
+}
+
+/* Main panel */
+
+.main-panel {
+    padding: 20px;
+}
+
+.main-panel section {
+    margin-bottom: 20px
+}
+
+.main-panel section h1 {
+    border-bottom: 2px solid rgba(179, 176, 176, 0.895);
+}
+
+.company {
+    margin-bottom: 10px;
+}
+
+.company h6 {
+    color: rgb(53, 53, 53);
+    margin-bottom: 8px;
+}
+
+.company ul {
+    padding-left: 34px;
+}
+
+.company ul li {
+    margin: 6px 0;
+}
+
+@media screen and (max-width:550px){
+    main {
+        grid-template-columns: 1fr;
+    }
+    .side-panel {
+        background-color: white;
+        min-height: fit-content;
+    }
+}
